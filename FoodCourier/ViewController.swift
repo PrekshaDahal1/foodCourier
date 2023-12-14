@@ -12,14 +12,54 @@ class ViewController: UIViewController {
     
     
     // MARK: - Initialization
+    lazy var imgStashIcon: UIImageView = {
+        
+        let image = UIImageView()
+        
+        image.translatesAutoresizingMaskIntoConstraints = false
+        
+        image.backgroundColor = UIColor.black
+        
+        return image
+        
+    }()
     
+    lazy var imgLocation: UIImageView = {
+        
+        let image = UIImageView()
+        
+        image.translatesAutoresizingMaskIntoConstraints = false
+       
+        return image
+    }()
+    
+    lazy var lblLocation: UILabel = {
+        
+        let label = UILabel()
+        
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        label.text = "Freedom way, Lekki phase"
+        
+        return label
+        
+    }()
+    
+    lazy var imgProfile: UIImageView = {
+       
+        let image = UIImageView()
+        
+        image.translatesAutoresizingMaskIntoConstraints = false
+        
+        return image
+    }()
     
     // MARK: - View Did Load
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .blue
         
         setupLayout()
         
@@ -27,7 +67,7 @@ class ViewController: UIViewController {
     
     // MARK: - View Will Appear
     override func viewWillAppear(_ animated: Bool) {
-        
+    
     }
     
     // MARK: - View Will Disappear
